@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.container {
+  width: 500px;
+  border: 1px solid gray;
+  padding: 20px;
+  margin: 0 auto;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+input[type="text"],
+input[type="email"],
+select {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 10px;
+  box-sizing: border-box;
+}
+
+input[type="radio"] {
+  margin-right: 5px;
+}
+
+button {
+  background-color: rgb(205, 169, 121);
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+}
+
+.button-container {
+  display: flex;
+  justify-content: space-around;
+}
+</style>
+</head>
+<body>
+
+<div class="container">
+
+  <h1>Academic information</h1>
+
+  <label for="degree">Degree:</label>
+  <select id="degree">
+    <option value="Master of Business Administration">Master of Business Administration</option>
+    </select>
+
+  <label for="studentID">Student ID:</label>
+  <input type="text" id="studentID" name="studentID">
+
+  <label for="classes">Classes attended:</label>
+  <select id="classes" multiple>
+    <option value="Geography">Geography</option>
+    <option value="Mathematics">Mathematics</option>
+    <option value="English">English</option>
+    </select>
+
+  <h1>Personal Details</h1>
+
+  <label for="firstName">First Name:</label>
+  <input type="text" id="firstName" name="firstName">
+
+  <label for="lastName">Last Name:</label>
+  <input type="text" id="lastName" name="lastName">
+
+  <label for="gender">Gender:</label>
+  <input type="radio" id="male" name="gender" value="Male">
+  <label for="male">Male</label>
+  <input type="radio" id="female" name="gender" value="Female">
+  <label for="female">Female</label>
+
+  <label for="email">Email:</label>
+  <input type="email" id="email" name="email">
+
+  <h1>TERMS AND CONDITIONS...</h1>
+
+  <textarea rows="5" cols="40"></textarea>
+
+  <div class="button-container">
+    <button type="submit">Send Form</button>
+    <button type="reset">Clear Form</button>
+  </div>
+</div>
+
+</body>
+</html>

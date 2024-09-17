@@ -1,0 +1,70 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f7f7f7;
+    margin: 0;
+    padding: 20px;
+}
+h1 {
+    text-align: center;
+    color: #333;
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+form {
+    max-width: 600px;
+    margin: 0 auto;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+    color: #555;
+}
+input[type="text"], input[type="email"], input[type="tel"], input[type="date"], input[type="time"], select {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 1em;
+    background-color: #fafafa;
+}
+input[type="submit"] {
+    width: 100%;
+    padding: 15px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.2em;
+    cursor: pointer;
+}
+input[type="submit"]:hover {
+    background-color: #af4a10;
+}
+.form-section {
+    margin-bottom: 20px;
+}
+.form-section:last-child {
+    margin-bottom: 0;
+}
+.form-group {
+    margin-bottom: 15px;
+}
+.form-group.inline {
+    display: flex;
+    justify-content: space-between;
+}
+.form-group.inline input[type="text"] {
+    width: 48%;
+}
+.note {
+    font-size: 0.9em;
+    color: #888;
+    margin-top: -10px;
+    margin-bottom: 15px;
+}

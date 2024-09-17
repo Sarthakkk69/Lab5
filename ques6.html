@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Land Of Boxes Order Form</title>
+</head>
+<body>
+
+    <h1 style="color: orangered;">Land Of Boxes Order Form</h1>
+
+    <form>
+        <h3>Personal Details</h3>
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" value=""><br><br>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" value=""><br><br>
+
+        <label for="address">Address:</label>
+        <textarea id="address" name="address" rows="2" cols="40"></textarea><br><br>
+
+        <label for="postcode">Postcode:</label>
+        <input type="text" id="postcode" name="postcode" value="7700"><br><br>
+
+        <h3>Product Order</h3>
+        <table border="1" cellpadding="5">
+            <tr>
+                <th>Product</th>
+                <th>Part Number</th>
+                <th>Quantity</th>
+                <th>Unit Price</th>
+                <th>Subtotal</th>
+            </tr>
+            <tr>
+                <td>EconoBox</td>
+                <td>LB100</td>
+                <td><input type="number" name="econobox_qty" value="3" min="0"></td>
+                <td>R5</td>
+                <td>R15</td>
+            </tr>
+            <tr>
+                <td>Standard Box</td>
+                <td>LB200</td>
+                <td><input type="number" name="standardbox_qty" value="4" min="0"></td>
+                <td>R10</td>
+                <td>R40</td>
+            </tr>
+            <tr>
+                <td>Premium Box</td>
+                <td>LB300</td>
+                <td><input type="number" name="premiumbox_qty" value="1" min="0"></td>
+                <td>R15</td>
+                <td>R15</td>
+            </tr>
+            <tr>
+                <td>Deluxe Box</td>
+                <td>LB400</td>
+                <td><input type="number" name="deluxebox_qty" value="0" min="0"></td>
+                <td>R20</td>
+                <td>R0</td>
+            </tr>
+            <tr>
+                <td>Super Deluxe Box</td>
+                <td>LB500</td>
+                <td><input type="number" name="superdeluxebox_qty" value="1" min="0"></td>
+                <td>R30</td>
+                <td>R30</td>
+            </tr>
+        </table>
+        <p>Total: R100</p><br>
+
+        <h3>Credit Card Details</h3>
+        <label for="card_type">Card Type:</label><br>
+        <input type="radio" id="mastercard" name="card_type" value="Mastercard" checked> Mastercard<br>
+        <input type="radio" id="visa" name="card_type" value="Visa"> Visa<br>
+        <input type="radio" id="amex" name="card_type" value="Amex"> American Express<br>
+        <input type="radio" id="diners" name="card_type" value="Diners Club"> Diners Club<br><br>
+
+        <label for="card_number">Card Number:</label>
+        <input type="text" id="card_number" name="card_number" value="45645"><br><br>
+
+        <label for="expiry_date">Expiry Date:</label>
+        <input type="text" id="expiry_date" name="expiry_date" value="03/99"><br><br>
+
+        <h3>Delivery Address</h3>
+        <textarea id="delivery_address" name="delivery_address" rows="2" cols="40">162 Main Road, Rondebosch, Cape Town</textarea><br><br>
+
+        <button type="submit">Send Order</button>
+        <button type="reset">Clear Form</button>
+    </form>
+
+</body>
+</html>
+
